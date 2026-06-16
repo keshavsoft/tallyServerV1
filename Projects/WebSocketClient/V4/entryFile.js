@@ -19,6 +19,14 @@ const startFunc = () => {
 
         ws.send(getMac());
     });
+
+    ws.on("error", (err) => {
+        console.error("WS Error:", err.message);
+    });
+
+    ws.on("close", (code, reason) => {
+        console.log("Closed:", code, reason.toString());
+    });
 };
 
 export default startFunc;

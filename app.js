@@ -31,7 +31,6 @@ app.use("/Secured", routerFromSecured);
 app.use("/Protected", MiddleWaresForProtected, routerFromProtected);
 app.use("/Main", routerFromMain);
 
-
 const { port } = startServer(app);
 
 if (process.env.OPEN_BROWSER === "true") {
