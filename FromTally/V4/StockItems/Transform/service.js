@@ -2,6 +2,7 @@ import { stockItems } from "@keshavsoft/tallyextract";
 
 const StartFunc = async () => {
     const dataFromTally = await stockItems();
+console.log("aaaaaaaaa");
 
     const LocalNewArray = dataFromTally.data.collection.map(element => {
         const gstdetails = element.gstdetails.at(-1);
