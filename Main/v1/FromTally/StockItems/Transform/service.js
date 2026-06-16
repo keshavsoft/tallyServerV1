@@ -1,14 +1,17 @@
-import { stockItems } from "@keshavsoft/tallyextract";
+import fs from "fs";
+import { stockItemsV1 } from "@keshavsoft/tallyextract";
+const dataPath = "./Data/Main/StockItems.json";
 
 const StartFunc = async () => {
-    const dataFromTally = await stockItems({ inSvCurrentCompany: "me" });
+    const dataFromTally = await stockItemsV1({ inSvCurrentCompany: "me" });
 
     const LocalNewArray = dataFromTally.data.collection.map(element => {
-        const gstdetails = element.gstdetails.at(-1);
         let sgstRate;
         let cgstRate;
 
-        if (gstdetails) {
+        if ("gstdetails" in element) {
+            const gstdetails = element.gstdetails.at(-1);
+
             const ratedetails = gstdetails.statewisedetails[0].ratedetails;
             const sgst = ratedetails.find(element => element.gstratedutyhead === "SGST/UTGST");
             const cgst = ratedetails.find(element => element.gstratedutyhead === "CGST");
@@ -24,7 +27,7 @@ const StartFunc = async () => {
             StockParentName: element.parent.value,
             StockCategory: element.category.value,
             StockGstApplicable: element.gstapplicable.value,
-            StockGstTypeOfSupply: element.gsttypeofsupply.value,
+            StockGstTypeOfSupply: element.gsttypeofsupply?.value,
             StockBaseUnits: element.baseunits.value,
             sgstRate,
             cgstRate,
@@ -33,7 +36,9 @@ const StartFunc = async () => {
         }
     });
 
-    return LocalNewArray;
+    fs.writeFileSync(dataPath, JSON.stringify(LocalNewArray));
+
+    return LocalNewArray.length;
 };
 
 export default StartFunc;
