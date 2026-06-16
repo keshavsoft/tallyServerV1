@@ -1,0 +1,21 @@
+{
+    "uiClasses": {
+        "ulClass1": "[&_svg]:size-6"
+    },
+    "title": {
+        "text": "Main Import",
+        "htmlId": "htmlId"
+    },
+    "items": [
+        {
+            "text": "FromTally",
+            "id": "ImportHtmlId",
+            "icon": [
+                "M12 3v12",
+                "M8 11l4 4 4-4",
+                "M5 21h14"
+            ],
+            "svgName": "download"
+        }
+    ]
+}
