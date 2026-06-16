@@ -81,5 +81,14 @@
         ]
       },
       "PrimarykeyTableNames": [],
-      "PrimarykeyTables": []
+      "PrimarykeyTables": [],
+      "columnsConfig": [
+        {
+          "columnName": "StockItemName",
+          "title": "StockItemName",
+          "cellConfig": {
+            "width": "150px"
+          }
+        }
+      ]
     }

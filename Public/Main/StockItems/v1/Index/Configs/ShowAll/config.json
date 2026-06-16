@@ -1,0 +1,47 @@
+{
+    "containerId": "kSTableContainer",
+    "tableName": "",
+    "mode": "create",
+    "layout": {
+        "verticalPosition": "top",
+        "type": "table"
+    },
+    "endPoints": {
+        "create": "",
+        "update": "",
+        "delete": "",
+        "read": "/MainProtected/V1/StockItems/ShowAll",
+        "find": "",
+        "filter": "",
+        "dataLists": {}
+    },
+    "options": {
+        "enabledSections": [
+            "vertical",
+            "table",
+            "footer"
+        ]
+    },
+    "columnsConfig": [
+        {
+            "columnName": "StockItemName",
+            "title": "StockItemName",
+            "cellConfig": {
+                "width": "150px"
+            }
+        },
+        {
+            "columnName": "StockItemType",
+            "title": "StockItemType",
+            "cellConfig": {
+                "width": "150px"
+            }
+        }
+    ],
+    "callbacks": {
+        "table": {
+            "onDelete": "function",
+            "onReadFail": "function"
+        }
+    }
+}

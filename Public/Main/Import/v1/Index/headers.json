@@ -8,6 +8,28 @@
     },
     "items": [
         {
+            "text": "Ledgers",
+            "id": "LedgersHtmlId",
+            "icon": [
+                "M12 3v12",
+                "M8 11l4 4 4-4",
+                "M5 21h14"
+            ],
+            "svgName": "home",
+            "href": "../../LedgerNames/v1"
+        },
+        {
+            "text": "StockItems",
+            "id": "StockItemsHtmlId",
+            "icon": [
+                "M12 3v12",
+                "M8 11l4 4 4-4",
+                "M5 21h14"
+            ],
+            "svgName": "home",
+            "href": "../../StockItems/v1"
+        },
+        {
             "text": "FromTally",
             "id": "ImportHtmlId",
             "icon": [
