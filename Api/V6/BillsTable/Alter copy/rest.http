@@ -1,0 +1,7 @@
+
+POST http://localhost:3000/Api/V6/BillsTable/Alter/1
+Content-Type: application/json
+
+{
+  "LedgerName": "Keshav"
+}

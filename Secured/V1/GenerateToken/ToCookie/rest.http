@@ -1,0 +1,8 @@
+
+POST http://localhost:3000/Secured/V1/GenerateToken/ToCookie
+Content-Type: application/json
+
+{
+    "UserName":"Keshav",
+    "Password":"9848163021"
+}

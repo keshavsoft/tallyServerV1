@@ -1,0 +1,48 @@
+{
+  "name": "tallyServerV1",
+  "version": "1.7.16",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file=.env app.js",
+    "pkg": "npx @yao-pkg/pkg app.js --targets node24-win-x64"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@keshavsoft/kschema": "^1.18.1",
+    "@keshavsoft/tallyextract": "^1.7.2",
+    "@yao-pkg/pkg": "^6.19.0",
+    "ajv": "^8.20.0",
+    "body-parser": "^2.2.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.4.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "lowdb": "^7.0.1",
+    "ws": "^8.21.0"
+  },
+  "devDependencies": {
+    "@keshavsoft/kschema-api-check": "^1.12.1",
+    "@keshavsoft/kschema-api-gen": "^1.11.1",
+    "@keshavsoft/kschema-api-gen-actions": "^1.18.3",
+    "@keshavsoft/kschema-cli-samples": "^1.15.2",
+    "express-fix-js": "^1.6.5",
+    "json-crud-ui": "^1.3.2",
+    "json-crud-ui-comp-table": "^1.3.3",
+    "json-crud-ui-components": "^1.7.2",
+    "json-crud-ui-init": "^1.6.2",
+    "json-crud-ui-table": "^1.11.3",
+    "kschema-api-gen-appjs": "^1.4.2",
+    "kschema-api-gen-endpointsjs": "^1.1.1",
+    "kschema-api-gen-routesjs": "^1.2.1",
+    "kschema-fs-api-gen-actions": "^1.7.6",
+    "tailwind-header-dom": "^4.7.1",
+    "tailwind-table-dom": "^3.12.2",
+    "tailwind-table-dom-comp": "^2.6.1",
+    "tailwind-todo": "^1.5.9",
+    "tailwind-vertical-dom": "^2.2.1"
+  }
+}

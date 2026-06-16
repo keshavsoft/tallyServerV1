@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OrderManV14</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#020617,#111827);
+color:#e2e8f0;
+min-height:100vh;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 40px;
+
+background:#111827;
+
+border-bottom:1px solid #1e293b;
+
+box-shadow:0 4px 20px rgba(0,0,0,.4);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#38bdf8;
+}
+
+.nav-links{
+display:flex;
+gap:15px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#cbd5e1;
+
+padding:12px 20px;
+
+border-radius:12px;
+
+background:#0f172a;
+
+border:1px solid #1e293b;
+
+transition:.3s;
+}
+
+.nav-links a:hover{
+background:#1e293b;
+border-color:#38bdf8;
+color:#fff;
+transform:translateY(-2px);
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:50px 25px;
+}
+
+.hero{
+text-align:center;
+padding:50px 0;
+}
+
+.hero h1{
+font-size:60px;
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+color:#cbd5e1;
+max-width:900px;
+margin:auto;
+line-height:1.8;
+}
+
+.badges{
+margin-top:30px;
+}
+
+.badge{
+display:inline-block;
+padding:10px 16px;
+margin:5px;
+background:#1e293b;
+border:1px solid #334155;
+border-radius:12px;
+color:#38bdf8;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:50px;
+}
+
+.card{
+background:#111827;
+padding:30px;
+border-radius:20px;
+border:1px solid #1e293b;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#38bdf8;
+}
+
+.card h3{
+color:#38bdf8;
+margin-bottom:15px;
+font-size:24px;
+}
+
+.card p{
+color:#cbd5e1;
+line-height:1.8;
+}
+
+.workflow{
+margin-top:60px;
+}
+
+.workflow h2{
+color:#38bdf8;
+margin-bottom:25px;
+font-size:38px;
+}
+
+.step{
+background:#0f172a;
+padding:20px;
+margin-bottom:15px;
+border-left:5px solid #38bdf8;
+border-radius:12px;
+}
+
+.code{
+margin-top:10px;
+background:#020617;
+padding:15px;
+border-radius:10px;
+border:1px solid #1e293b;
+font-family:Consolas;
+overflow:auto;
+}
+
+.footer{
+text-align:center;
+padding:40px;
+margin-top:50px;
+color:#94a3b8;
+border-top:1px solid #1e293b;
+}
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:20px;
+}
+
+.nav-links{
+flex-direction:column;
+width:100%;
+}
+
+.nav-links a{
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+🚀 OrderManV14
+</div>
+
+<div class="nav-links">
+
+<a href="./V1.html">
+👤 End User Guide
+</a>
+
+<a href="./V2.html">
+🛠️ Developer Guide
+</a>
+
+</div>
+
+</nav>
+
+<div class="container">
+
+<div class="hero">
+
+<h1>OrderManV14</h1>
+
+<p>
+Modern Order Management System built with Node.js and Express.js.
+Generate schema data, CRUD UI pages, dynamic tables, and scalable APIs using KeshavSoft tools.
+</p>
+
+<div class="badges">
+
+<span class="badge">Node.js</span>
+<span class="badge">Express.js</span>
+<span class="badge">CRUD UI</span>
+<span class="badge">Schema Generator</span>
+<span class="badge">Order Management</span>
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>📊 Data Generator</h3>
+<p>
+Generate Data folder and schema JSON files automatically using scripts.
+</p>
+</div>
+
+<div class="card">
+<h3>🖥 CRUD UI</h3>
+<p>
+Generate modern CRUD HTML pages using KeshavSoft ShowHtml extension.
+</p>
+</div>
+
+<div class="card">
+<h3>⚡ Express APIs</h3>
+<p>
+Modular Express.js architecture with scalable routing structure.
+</p>
+</div>
+
+</div>
+
+
+
+</div>
+
+<div class="footer">
+
+🚀 Developed with ❤ by KeshavSoft
+
+</div>
+
+</body>
+
+</html>
