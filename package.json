@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@keshavsoft/kschema": "^1.18.1",
-    "@keshavsoft/tallyextract": "^1.9.6",
+    "@keshavsoft/tallyextract": "^1.9.7",
     "@yao-pkg/pkg": "^6.19.0",
     "ajv": "^8.20.0",
     "body-parser": "^2.2.0",

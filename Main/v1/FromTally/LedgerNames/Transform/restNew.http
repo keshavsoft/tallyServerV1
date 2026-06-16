@@ -1,1 +1,1 @@
-GET http://localhost:3045/Main/v1/FromTally/StockItems/Transform
+GET http://localhost:3045/Main/v1/FromTally/LedgerNames/Transform
