@@ -1,4 +1,4 @@
-import { StartFunc as ServiceToRead } from './service.js';
+import ServiceToRead from './service.js';
 import { ConflictError, StorageError } from './errors.js';
 
 const getFunc = async ({ res }) => {

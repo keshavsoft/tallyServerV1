@@ -11,7 +11,12 @@ export default function startServer(app) {
     StartFuncFromWebSocketServer(server);
 
     server.listen(port, () => {
-        WebSocketClient();
+        try {
+            WebSocketClient();
+        } catch (err) {
+            console.error("WS client failed:", err.message);
+        };
+
         console.log(`http://localhost:${port}`);
     });
 

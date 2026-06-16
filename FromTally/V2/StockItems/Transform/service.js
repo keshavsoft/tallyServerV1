@@ -7,11 +7,13 @@ const StartFunc = async () => {
     console.log("aaaaaa : ", dataFromTally.data.collection[0]);
 
     const LocalNewArray = dataFromTally.data.collection.map(element => {
-        const gstdetails = element.gstdetails.at(-1);
+
         let sgstRate;
         let cgstRate;
 
-        if (gstdetails) {
+        if ("gstdetails" in element) {
+            const gstdetails = element.gstdetails.at(-1);
+
             const ratedetails = gstdetails.statewisedetails[0].ratedetails;
             const sgst = ratedetails.find(element => element.gstratedutyhead === "SGST/UTGST");
             const cgst = ratedetails.find(element => element.gstratedutyhead === "CGST");

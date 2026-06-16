@@ -1,8 +1,7 @@
-import { stockItems } from "@keshavsoft/tallyextract";
+import { stockItemsV1 } from "@keshavsoft/tallyextract";
 
 const StartFunc = async () => {
-    const dataFromTally = await stockItems();
-    console.log("aaaaaaaaa", dataFromTally);
+    const dataFromTally = await stockItemsV1({ inSvCurrentCompany: "Mani9" });
 
     const LocalNewArray = dataFromTally.data.collection.map(element => {
         let sgstRate;
