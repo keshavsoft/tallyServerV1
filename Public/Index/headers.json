@@ -16,7 +16,8 @@
             },
             "svgName": "info",
             "href": "../docs/index.html"
-        },{
+        },
+        {
             "text": "Ledgers",
             "id": "LedgersHtmlId",
             "icon": [],
@@ -25,6 +26,16 @@
             },
             "svgName": "home",
             "href": "../../V7/LedgerNames/ShowAll/index.html"
+        },
+        {
+            "text": "Main",
+            "id": "MainHtmlId",
+            "icon": [],
+            "uiClasses": {
+                "aClass": ""
+            },
+            "svgName": "home",
+            "href": "../../Main/Import/v1"
         },
         {
             "text": "StockItems",

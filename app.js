@@ -16,6 +16,7 @@ import { router as routerFromToTally } from "./ToTally/routes.js";
 import { router as routerFromSecured } from "./Secured/routes.js";
 import { router as routerFromProtected } from "./Protected/routes.js";
 import { router as routerFromMain } from "./Main/routes.js";
+import { router as routerFromMainProtected } from "./MainProtected/routes.js";
 
 loadConfig();
 
@@ -30,6 +31,8 @@ app.use("/FromTally", routerFromFromTally);
 app.use("/Secured", routerFromSecured);
 app.use("/Protected", MiddleWaresForProtected, routerFromProtected);
 app.use("/Main", routerFromMain);
+app.use("/MainProtected", MiddleWaresForProtected, routerFromMainProtected);
+
 
 const { port } = startServer(app);
 

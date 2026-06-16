@@ -1,4 +1,5 @@
 {
+    "GetEndPoint": "/Main/v2/FromTally/StockItems/Transform",
     "GetEndPoint2": "/FromTally/V2/StockItems/Transform",
-    "GetEndPoint": "/FromTally/V3/StockItems/Transform"
+    "GetEndPoint1": "/FromTally/V3/StockItems/Transform"
 }
