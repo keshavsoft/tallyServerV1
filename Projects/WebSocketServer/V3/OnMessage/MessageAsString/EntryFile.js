@@ -3,6 +3,7 @@ import tallyStockItems from "../../../../../FromTally/V4/StockItems/Transform/se
 
 let StartFunc = ({ inDataAsString, inws, inClients, inChatLog, inSendFunc }) => {
     let LocalDataAsSting = inDataAsString;
+    console.log("LocalDataAsSting : ", LocalDataAsSting);
 
     switch (LocalDataAsSting) {
         case "getLedgerNames":
