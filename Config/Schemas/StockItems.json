@@ -82,10 +82,95 @@
       },
       "PrimarykeyTableNames": [],
       "PrimarykeyTables": [],
+      "columnsConfig1": [
+        {
+          "columnName": "StockItemName",
+          "title": "StockItemName",
+          "cellConfig": {
+            "width": "150px"
+          }
+        }
+      ],
+      "callbacks": {
+        "table": {
+          "onDelete": "function",
+          "onReadFail": "function"
+        }
+      },
       "columnsConfig": [
         {
           "columnName": "StockItemName",
           "title": "StockItemName",
+          "cellConfig": {
+            "width": "150px"
+          }
+        },
+        {
+          "columnName": "StockGstApplicable",
+          "title": "StockGstApplicable",
+          "cellConfig": {
+            "width": "150px"
+          }
+        },
+        {
+          "columnName": "StockBaseUnits",
+          "title": "StockBaseUnits",
+          "cellConfig": {
+            "width": "150px"
+          }
+        },
+        {
+          "columnName": "sgstRate",
+          "title": "sgstRate",
+          "cellConfig": {
+            "width": "150px"
+          }
+        },
+        {
+          "columnName": "cgstRate",
+          "title": "cgstRate",
+          "cellConfig": {
+            "width": "150px"
+          }
+        },
+        {
+          "columnName": "TaxPer",
+          "title": "TaxPer",
+          "cellConfig": {
+            "width": "150px"
+          }
+        },
+        {
+          "columnName": "Uom",
+          "title": "Uom",
+          "cellConfig": {
+            "width": "150px"
+          }
+        },
+        {
+          "columnName": "StockItemReservedName",
+          "title": "StockItemReservedName",
+          "cellConfig": {
+            "width": "150px"
+          }
+        },
+        {
+          "columnName": "StockItemType",
+          "title": "StockItemType",
+          "cellConfig": {
+            "width": "150px"
+          }
+        },
+        {
+          "columnName": "StockParentName",
+          "title": "StockParentName",
+          "cellConfig": {
+            "width": "150px"
+          }
+        },
+        {
+          "columnName": "StockCategory",
+          "title": "StockCategory",
           "cellConfig": {
             "width": "150px"
           }
